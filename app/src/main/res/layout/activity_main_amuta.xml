@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.myapplication.MainAmotaActivity">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:text="Amota"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/anonDonationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginBtn"
+        android:layout_alignBottom="@+id/loginBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:onClick="onClickAnonDonation"
+        android:text="תרומה אנונימית"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:onClick="onClickLogin"
+        android:text="כניסה"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/amotaCallBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:onClick="onClickAmotaCall" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Confirmation note -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה בוצעה בהצלחה"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="60dp"
+        android:id="@+id/textView" />
+
+    <!-- Go to Login page -->
+    <Button
+        android:id="@+id/goToLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goIntoRegisterBtn"
+        android:layout_alignBottom="@+id/goIntoRegisterBtn"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="onClickLogin"
+        android:padding="12dp"
+        android:text="כניסה"
+        android:textAllCaps="false" />
+
+    <!-- Back Home Button -->
+    <Button
+        android:id="@+id/goIntoRegisterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="140dp"
+        android:onClick="onClickgoIntoRegister"
+        android:padding="12dp"
+        android:text="חזרה לדף הבית"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
